@@ -1,0 +1,6 @@
+<navigator url="/pages/Home/Home">
+<text>return1</text>
+</navigator>
+<view id="list1">
+<text>item1</text>
+</view>

@@ -1,0 +1,26 @@
+content:style<simple>
+page1:Home
+{
+    swiper[ "xxxxxxxx"; "xxxxxxxx";]         => "height:300rpx;interval:4000;";
+    list[
+        nevigator<MyPage>[
+            image - "xxxxxxx"                => "height:190rpx;width:300rpx;position:center;";
+        ];
+        nevigator<MyPage>[
+            image - "xxxxxxx"                => "height:190rpx;width:300rpx;position:center;";
+        ];
+    ]                                        => "width:90%;position:center;listCol:2;listColHeight:300rpx;";
+    list[
+         nevigator<MyPage>[
+            image - "xxxxxxx"                => "height:160rpx;width:200rpx;position:center;";
+        ];
+         nevigator<MyPage>[
+            image - "xxxxxxx"                => "height:160rpx;width:200rpx;position:center;";
+        ];
+         nevigator<MyPage>[
+            image - "xxxxxxx"                => "height:160rpx;width:200rpx;position:center;";
+        ];
+    ]                                        => "position:center;listCol:3;listColHeight:220rpx;";
+    image - "xxxxxxx"                        => "width:100%;";
+}
+

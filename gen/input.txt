@@ -1,0 +1,50 @@
+content:style<simple>
+
+navigationBar{black,"小例子",#ff030a}
+
+page-1: Home
+{
+    swiper[ "/六花.gif"; "/六花.gif";]          => 'height:300rpx,interval:4000';
+    navigator<MyPage>[
+         image - "/六花.gif"                   => 'height:190rpx,width:300rpx';
+    ]                                         =>  'width:80%,align:left-top,height:400rpx';
+    list[
+        navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage1;
+        ]                                     => listNavigator1;
+        navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage1;
+        ]                                      => listNavigator2;
+    ]                                          => 'listCol:2,listColHeight:300rpx,width:90%,position:center,background(black,"https://pic3.zhimg.com/v2-5fb13110e1de13d4c11e6e7f5b8026da_r.jpg")';
+    view[
+        text - "hjk"                           => 'color:red,font(bold,50rpx,"times new roman"),border(1rpx,solid,black)';
+    ]                                          => 'align:center-middle';
+    button<navigation-MyPage>-"跳转到MyPage";
+    list[
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+    ]                                         => 'listCol:3,listColHeight:220rpx,position:center';
+    image - "/六花.gif"                        => 'width:100%';
+}
+
+listNavigatorImage1:'height:190rpx,width:300rpx';
+listNavigatorImage2:'height:160rpx,width:200rpx';
+listNavigator1:'align:left-bottom';
+listNavigator2:'align:center-middle';
+
+page-2: MyPage
+{
+    navigator<Home>[
+        text - "return1";
+    ];
+    list[
+        text - "item1";
+    ]                                  => 'listCol:1,listColHeight:300rpx,width:90%,position:center';
+}
