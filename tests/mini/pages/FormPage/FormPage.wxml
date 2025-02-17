@@ -1,0 +1,49 @@
+<view id="view1">
+	<text class="formTitle">用户注册表单</text>
+</view>
+<view class="formContainer">
+	<form bindsubmit="form1Submit">
+		<label class="formItem" for="用户名">
+			<text>请输入用户名:</text>
+			<input type="text" placeholder="请输入用户名" name="user_name" id="user_name"/>
+		</label>
+		<label class="formItem" for="密码">
+			<text>请输入密码:</text>
+			<input type="password" placeholder="请输入密码" name="user_password" id="user_password"/>
+		</label>
+		<label class="formItem" for="性别">
+			<radio-group name="gender" id="gender">
+				<label>
+					<radio value="Male" checked="true"/>
+					<text>Male</text>
+				</label>
+				<label>
+					<radio value="Female"/>
+					<text>Female</text>
+				</label>
+			</radio-group>
+		</label>
+		<label class="formItem" for="兴趣爱好">
+			<checkbox-group name="preferences" id="preferences">
+				<label>
+					<checkbox value="音乐" checked="true"/>
+					<text>音乐</text>
+				</label>
+				<label>
+					<checkbox value="电影"/>
+					<text>电影</text>
+				</label>
+				<label>
+					<checkbox value="运动" checked="true"/>
+					<text>运动</text>
+				</label>
+			</checkbox-group>
+		</label>
+		<view>
+			<button class="formButton" form-type="submit">提交</button>
+		</view>
+		<view>
+			<button class="formButton" form-type="reset">重制</button>
+		</view>
+	</form>
+</view>

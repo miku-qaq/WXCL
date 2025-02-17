@@ -1,0 +1,91 @@
+project:"mini";
+
+navigationBar{black,"小例子",#ff030a}
+
+buttonStyle:'border-radius:10rpx,spacing(10rpx,20rpx)';
+
+page-1: "Home"
+{
+    // 这是一个注释
+    swiper["/六花.gif" , "/六花.gif"]          => 'height:300rpx,interval:4000,width:100%';
+    navigator<MyPage>[
+         image - "/六花.gif"                   => 'height:190rpx,width:300rpx';
+    ]                                         =>  'width:80%,align:left-top,height:400rpx';
+    list[
+        navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage1;
+        ]                                     => listNavigator1;
+        navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage1;
+        ]                                      => listNavigator2;
+    ]                                          => 'listCol:2,listColHeight:300rpx,width:90%,position:center,background(black,"https://pic3.zhimg.com/v2-5fb13110e1de13d4c11e6e7f5b8026da_r.jpg")';
+    view[
+        text - "hjk"                           => 'color:red,font(bold,50rpx,"times new roman"),border(1rpx,solid,black)';
+    ]                                          => 'align:center-middle';
+    button<navigation-MyPage>-"跳转到MyPage"    => buttonStyle;
+    list[
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+         navigator<MyPage>[
+            image - "/六花.gif"                => listNavigatorImage2;
+        ]                                     => listNavigator2;
+    ]                                         => 'listCol:3,listColHeight:220rpx,position:center';
+    image - "/六花.gif"                        => 'width:100%';
+}
+
+listNavigatorImage1:'height:190rpx,width:300rpx';
+listNavigatorImage2:'height:160rpx,width:200rpx';
+listNavigator1:'align:left-bottom';
+listNavigator2:'align:center-middle';
+
+page-2: "FormPage"
+{
+    view[
+        text - "用户注册表单" => formTitle;
+    ] => 'align:center-top,spacing(30rpx, 40rpx)';
+
+    view[
+        form <"https://www.example.com/form"> [
+            label <"用户名"> [
+                text - "请输入用户名:" ;
+                input <text> - "请输入用户名" : "user_name" => 'width:100%';
+            ] => formItem;
+
+            label <"密码"> [
+                text - "请输入密码:" ;
+                input <password> - "请输入密码" : "user_password" => 'width:100%';
+            ] => formItem;
+
+            label <"性别"> [
+                radio-group: "gender" [
+                    "Male" *,
+                    "Female"
+                ] ;
+            ] => formItem;
+
+            label <"兴趣爱好"> [
+                checkbox-group: "preferences" [
+                    "音乐" *,
+                    "电影",
+                    "运动" *
+                ] ;
+            ] => formItem;
+
+            view[
+                button <submit> - "提交" => formButton ;
+            ]  ;
+            view[
+                button <reset> - "重制" => formButton ;
+            ]  ;
+        ];
+    ] => formContainer;
+}
+
+formTitle: 'color:black,font(bold, 50rpx, "times new roman")';
+formContainer: 'width:80%,position:center,spacing(40rpx, 50rpx)';
+formItem: 'align:center-middle,spacing(20rpx, 30rpx),border(2rpx,solid,gray)';
+formButton: 'border-radius:10rpx,spacing(30rpx,40rpx),color:red,background(green,"")';

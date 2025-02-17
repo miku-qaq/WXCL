@@ -1,0 +1,92 @@
+#swiper1 {
+  height: 300rpx;
+  width: 100%;
+}
+
+#image1 {
+  height: 190rpx;
+  width: 300rpx;
+}
+
+#navigator1 {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 400rpx;
+}
+
+#list1>navigator {
+  width: 50.00%;
+  height: 300rpx;
+}
+
+#list1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: black url("https://pic3.zhimg.com/v2-5fb13110e1de13d4c11e6e7f5b8026da_r.jpg" no-repeat center / cover);
+}
+
+#text1 {
+  color: red;
+  font: bold 50rpx "times new roman";
+  border: 1rpx solid black;
+  box-sizing: border-box;
+}
+
+#view1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#list2>navigator {
+  width: 33.33%;
+  height: 220rpx;
+}
+
+#list2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image7 {
+  width: 100%;
+}
+
+.listNavigatorImage1 {
+  height: 190rpx;
+  width: 300rpx;
+}
+
+.listNavigatorImage2 {
+  height: 160rpx;
+  width: 200rpx;
+}
+
+.listNavigator1 {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.listNavigator2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+swiper-item>image {
+  width: 100%;
+}

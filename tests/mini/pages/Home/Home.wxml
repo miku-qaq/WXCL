@@ -1,0 +1,35 @@
+<swiper autoplay="true" id="swiper1" interval="4000">
+	<swiper-item>
+		<image src="/六花.gif" mode="aspectFix"/>
+	</swiper-item>
+	<swiper-item>
+		<image src="/六花.gif" mode="aspectFix"/>
+	</swiper-item>
+</swiper>
+<navigator url="/pages/MyPage/MyPage" id="navigator1">
+	<image src="/六花.gif" id="image1" mode = "aspectFit"/>
+</navigator>
+<view id="list1">
+	<navigator url="/pages/MyPage/MyPage" class="listNavigator1">
+		<image src="/六花.gif" class="listNavigatorImage1" mode = "aspectFit"/>
+	</navigator>
+	<navigator url="/pages/MyPage/MyPage" class="listNavigator2">
+		<image src="/六花.gif" class="listNavigatorImage1" mode = "aspectFit"/>
+	</navigator>
+</view>
+<view id="view1">
+	<text id="text1">hjk</text>
+</view>
+<button class="buttonStyle" bind:tap="buttonBindFunction1">跳转到MyPage</button>
+<view id="list2">
+	<navigator url="/pages/MyPage/MyPage" class="listNavigator2">
+		<image src="/六花.gif" class="listNavigatorImage2" mode = "aspectFit"/>
+	</navigator>
+	<navigator url="/pages/MyPage/MyPage" class="listNavigator2">
+		<image src="/六花.gif" class="listNavigatorImage2" mode = "aspectFit"/>
+	</navigator>
+	<navigator url="/pages/MyPage/MyPage" class="listNavigator2">
+		<image src="/六花.gif" class="listNavigatorImage2" mode = "aspectFit"/>
+	</navigator>
+</view>
+<image src="/六花.gif" id="image7" mode = "aspectFit"/>

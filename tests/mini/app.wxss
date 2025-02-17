@@ -1,0 +1,5 @@
+.buttonStyle {
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
