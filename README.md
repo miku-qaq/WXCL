@@ -23,7 +23,7 @@ WXCL 是一种中间代码，通过专门的翻译程序将其转换为微信小
 
 ## 安装
 
-你可以通过 pip 安装所需软件包：
+你可以通过 pip 安装：
 
 ```bash
-pip install cssbeautifier jsbeautifier antlr4-python3-runtime
+pip install cssbeautifier jsbeautifier WXCL antlr4-python3-runtime
